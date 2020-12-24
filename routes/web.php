@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource("employers", "EmployerController");
+
+//Route::get('employers/{id}', function ($id){
+//    return \App\Models\Employer::findOrFail($id);
+//});
+
